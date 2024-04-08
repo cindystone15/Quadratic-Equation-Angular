@@ -1,0 +1,14 @@
+<p *ngIf="roots.length > 0">Roots:</p>
+<ul>
+  <ng-container *ngFor="let root of roots">
+    <li>
+      <span *ngIf="root.type === 'real'">Root of delta = 0 -> Real: {{ root.value }}</span>
+
+      <span *ngIf="root.type === 'linear'">root is linear: {{ root.value }}</span>
+
+      <span *ngIf="root.type === 'imaginary'">Imaginary!! No real roots</span>
+      
+      <span *ngIf="root.type === 'double'">Roots are: {{ root.value }}</span>
+    </li>
+  </ng-container>
+</ul>

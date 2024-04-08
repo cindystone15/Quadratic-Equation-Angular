@@ -1,0 +1,19 @@
+<form class="ui large form segment">
+  <h3 class="ui header"> Quadratic Equation App</h3>
+  <div class="field">
+    <label for="a"> a:</label>
+
+    <input name="a"  type="number" #newA required> 
+  </div>
+  <div class="field">
+    <label for="b" >b:</label>
+    <input name ="b" type="number" #newB required>
+  </div>
+  <div class="field">
+    <label for="c" >c:</label>
+    <input name ="c" type="number" #newC required>
+  </div>
+  <button (click)="addElements(newA, newB, newC)" class="ui positive right floated button"> Calculate</button>
+</form>
+
+<app-calculate></app-calculate>
